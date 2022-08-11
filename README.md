@@ -253,6 +253,20 @@ As always - comments welcome.
 -- Dr. Chuck
 Sun Sep 29 00:11:01 EDT 2013
 
-ASSIGNMENT : In this assignment you will download some of the mailing list data from http://mbox.dr-chuck.net/ and run the data cleaning / modeling process and take some screen shots. All screenshots should use the same data set.
+ASSIGNMENT : In this assignment you will visualize the mailing list data you have downloaded from http://mbox.dr-chuck.net/ and take some screen shots. Important: You do not have to download all of the data. Gbasic.py must use a count greater than 300. You can run gmane multiple times to download more messages. It is completely acceptable to visualize a small subset of the data in the gbasic screenshot. For the gbasic screenshot show the lines for dump?, loaded messages=, and both sections for Top Email list participants & Email list organizations. ***For students in mainland China that can't access the Google API for the timeline, take a screenshot of gline.js open in your editor showing the numbers, dates of messages at the top. Please add a note to your assignment.***
 
 SOLUTION :
+1. A screen shot of you running the gbasic.py program to compute basic histogram data on the messages you have retrieved.
+![image](https://user-images.githubusercontent.com/89823572/184171821-00fa70f2-90c7-4b9c-abe1-63f8e3ecef46.png)
+
+2. A screen shot of word cloud visualization for the messages you have retrieved.
+![image](https://user-images.githubusercontent.com/89823572/184171935-90e02aa7-9907-4938-83b0-5a1d86e5ee57.png)
+
+3. A screen shot of time line visualization for the messages you have retrieved showing messages per month.
+![image](https://user-images.githubusercontent.com/89823572/184171997-6175d47f-139a-4280-8b2a-5a347abb96ce.png)
+
+4. Optional Challenge: Change the gline.py program to show the message count by year instead of by month and take a screen shot of the by year visualization. You can switch from a by-month to a by-year visualization by changing only a few lines in gline.py. The puzzle is to figure out the smallest change to accomplish the change. If you do not want to do this optional challenge - just upload the above image a second time.
+![image](https://user-images.githubusercontent.com/89823572/184172071-621e8b15-caa7-4ab3-ad86-8607b2ac7615.png)
+
+
+
