@@ -1,4 +1,4 @@
-# Visualizing-Email-Data
+# Loading-and-Modeling-Mail-Data-Project
 Analyzing an EMAIL Archive from gmane and vizualizing the data
 using the D3 JavaScript library
 
@@ -55,16 +55,26 @@ Mac: python3 gmane.py
 Win: gmane.py 
 
 How many messages:10
+
 http://mbox.dr-chuck.net/sakai.devel/1/2 2662
-    ggolden@umich.edu 2005-12-08T23:34:30-06:00 call for participation: developers documentation
+
+   ggolden@umich.edu 2005-12-08T23:34:30-06:00 call for participation: developers documentation
 http://mbox.dr-chuck.net/sakai.devel/2/3 2434
-    csev@umich.edu 2005-12-09T00:58:01-05:00 report from the austin conference:  sakai developers break into song
+    
+   csev@umich.edu 2005-12-09T00:58:01-05:00 report from the austin conference:  sakai developers break into song
+
 http://mbox.dr-chuck.net/sakai.devel/3/4 3055
-    kevin.carpenter@rsmart.com 2005-12-09T09:01:49-07:00 cas and sakai 1.5
+    
+   kevin.carpenter@rsmart.com 2005-12-09T09:01:49-07:00 cas and sakai 1.5
+
 http://mbox.dr-chuck.net/sakai.devel/4/5 11721
-    michael.feldstein@suny.edu 2005-12-09T09:43:12-05:00 re: lms/vle rants/comments
+
+   michael.feldstein@suny.edu 2005-12-09T09:43:12-05:00 re: lms/vle rants/comments
+
 http://mbox.dr-chuck.net/sakai.devel/5/6 9443
-    john@caret.cam.ac.uk 2005-12-09T13:32:29+00:00 re: lms/vle rants/comments
+    
+   john@caret.cam.ac.uk 2005-12-09T13:32:29+00:00 re: lms/vle rants/comments
+
 Does not start with From 
 
 The program scans content.sqlite from 1 up to the first message number not
@@ -102,13 +112,19 @@ data cleaning process.
 Running gmodel.py works as follows:
 
 Mac: python3 gmodel.py
+
 Win: gmodel.py
 
 Loaded allsenders 1588 and mapping 28 dns mapping 1
+
 1 2005-12-08T23:34:30-06:00 ggolden22@mac.com
+
 251 2005-12-22T10:03:20-08:00 tpamsler@ucdavis.edu
+
 501 2006-01-12T11:17:34-05:00 lance@indiana.edu
+
 751 2006-01-24T11:13:28-08:00 vrajgopalan@ucmerced.edu
+
 ...
 
 The gmodel.py program does a number of data cleaing steps
@@ -129,7 +145,9 @@ the lifetime of the email list.  For example, Steve Githens used the following
 email addresses over the life of the Sakai developer list:
 
 s-githens@northwestern.edu
+
 sgithens@cam.ac.uk
+
 swgithen@mtu.edu
 
 We can add two entries to the Mapping table
@@ -157,6 +175,7 @@ The first, simplest data analysis is to do a "who does the most" and "which
 organzation does the most"?  This is done using gbasic.py:
 
 Mac: python3 gbasic.py 
+
 Win: gbasic.py 
 
 How many to dump? 5
@@ -164,16 +183,24 @@ Loaded messages= 51330 subjects= 25033 senders= 1584
 
 Top 5 Email list participants
 steve.swinsburg@gmail.com 2657
+
 azeckoski@unicon.net 1742
+
 ieb@tfd.co.uk 1591
+
 csev@umich.edu 1304
+
 david.horwitz@uct.ac.za 1184
 
 Top 5 Email list organizations
 gmail.com 7339
+
 umich.edu 6243
+
 uct.ac.za 2451
+
 indiana.edu 2258
+
 unicon.net 2055
 
 You can look at the data in index.sqlite and if you find a problem, you 
@@ -226,3 +253,6 @@ As always - comments welcome.
 -- Dr. Chuck
 Sun Sep 29 00:11:01 EDT 2013
 
+ASSIGNMENT : In this assignment you will download some of the mailing list data from http://mbox.dr-chuck.net/ and run the data cleaning / modeling process and take some screen shots. All screenshots should use the same data set.
+
+SOLUTION :
